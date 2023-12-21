@@ -3,78 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Float</title>
-    <style>
-        body.
-        html {
-            margin: 0;
-            padding: 0;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .container {
-            width: 600px;
-            margin: 50px auto;
-            border: 5px solid #333;
-            box-sizing: border-box;
-            padding: 5px;
-        }
-
-
-        .content {
-            content: '';
-            display: block;
-            clear: both;
-        }
-
-        .sidebar {
-            float: left;
-            width: 40%;
-        }
-
-        
-
-        aside {
-            grid-area: aside;
-            background-color: #2f93ff;
-            padding: 60px 0;
-        }
-
-        nav {
-            grid-area: nav;
-            background-color: #e45765;
-            padding: 100px 0;
-        }
-
-        main {
-            background-color: #e0aa77;
-            width: 60%;
-            float: right;
-            box-sizing: border-box;
-            flex: 1.5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        footer { 
-            grid-area: footer;
-            background-color: #666;
-            padding: 20px 0;
-        }
-    </style>
+    <title>GHN Ollshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500&family=Montserrat&family=Pacifico&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>Header</header>
-        <aside>Aside</aside>
-        <nav>Nav</nav>
-        <main>Main</main>
-        <footer>Footer</footer>
+
+<div class="container">
+
+<header class="header">
+    <div class="hero">
+        <h2 class="heading">GHN Shop</h2>
+        <p class="sub-heading">Jenis Jenis Baju</p>
     </div>
+    <div class="features feature-1">
+        <h4 class="price">IDR 299K</h4>
+        <p class="item">Rak Satu</p>
+    </div>
+    <div class="features feature-2">
+        <h4 class="price">IDR 150K</h4>
+        <p class="item">Rak Dua</p>
+    </div>
+</header>
+
+<nav class="menu">
+    <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="brand">
+        <h1>GHN Shop</h1>
+    </div>
+    <ul class="menu-list">
+        <li><a href="">Home</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Gallery</a></li>
+    </ul>
+</nav>
+
+<section class="services">
+    <div class="service">
+        <div class="icon">👚</div>
+        <h3>Tutorial</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quia, dignissimos perferendis ea totam aperiam!</p>
+    </div>
+    <div class="service">
+        <div class="icon">👖</div>
+        <h3>Online Course</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quia, dignissimos perferendis ea totam aperiam!</p>
+    </div>
+    <div class="service">
+        <div class="icon">👕</div>
+        <h3>Podcast</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quia, dignissimos perferendis ea totam aperiam!</p>
+    </div>
+    <div class="service">
+        <div class="icon">🩳</div>
+        <h3>Merch</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quia, dignissimos perferendis ea totam aperiam!</p>
+    </div>
+</section>
+
+<section class="gallery">
+    <h2>Gallery</h2>
+    <img src="https://source.unsplash.com/random/201x201" alt="">
+    <img src="https://source.unsplash.com/random/202x202" alt="">
+    <img src="https://source.unsplash.com/random/203x203" alt="">
+    <img src="https://source.unsplash.com/random/204x204" alt="">
+    <img src="https://source.unsplash.com/random/205x205" alt="">
+    <img src="https://source.unsplash.com/random/206x206" alt="">
+    <img src="https://source.unsplash.com/random/207x207" alt="">
+    <img src="https://source.unsplash.com/random/208x208" alt="">
+    <img src="https://source.unsplash.com/random/209x209" alt="">
+    <img src="https://source.unsplash.com/random/2010x2010" alt="">
+</section>
+
+</div>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('slide');
+}) 
+</script>
 </body>
-</html>
+</html
